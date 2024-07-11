@@ -1,0 +1,186 @@
+/* public/styles/style.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    /*background: #2c3e50;*/
+}
+nav {
+    margin: 27px auto 0;
+
+    position: relative;
+    width: 470px;
+    height: 50px;
+    background-color: #34495e;
+    border-radius: 8px;
+    font-size: 0;
+    text-decoration: none;
+}
+nav a {
+    line-height: 50px;
+    height: 100%;
+    font-size: 15px;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+}
+nav .animation {
+    position: absolute;
+    height: 100%;
+    top: 0;
+    z-index: 0;
+    transition: all .5s ease 0s;
+    border-radius: 8px;
+}
+a:nth-child(1) {
+    width: 100px;
+}
+a:nth-child(2) {
+    width: 110px;
+}
+a:nth-child(3) {
+    width: 100px;
+}
+a:nth-child(4) {
+    width: 160px;
+}
+
+nav .start-home, a:nth-child(1):hover~.animation {
+    width: 100px;
+    left: 0;
+    background-color: #1abc9c;
+}
+nav .start-about, a:nth-child(2):hover~.animation {
+    width: 110px;
+    left: 100px;
+    background-color: #1abc9c;
+}
+nav .start-blog, a:nth-child(3):hover~.animation {
+    width: 100px;
+    left: 210px;
+    background-color: #1abc9c;
+}
+nav .start-portefolio, a:nth-child(4):hover~.animation {
+    width: 160px;
+    left: 310px;
+    background-color: #1abc9c;
+}
+
+body {
+    font-size: 12px;
+    font-family: sans-serif;
+
+}
+.logo {
+    height: 15vh ; /* Adjust the height as needed */
+    width: auto;
+    padding: 5px;
+}
+.title-wrapper {
+    margin: 1em auto;
+    max-width: 800px;
+    width: 95%;
+    font: 18px/1.5 sans-serif;
+}
+h1{
+    color: #FFFFFF;
+    text-align: left;
+    padding: 20px;
+    font-size: 3em;
+}
+h2{
+    /*color: #FFFFFF;*/
+    padding: 15px;
+}
+.container {
+    padding: 20px;
+}
+
+/* Horizontal elements container */
+.abo-elements {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; /* Space between the elements */
+    margin: 20px 0;
+    padding: 10px;
+}
+
+
+/* Individual element styles */
+.abo-element {
+    flex: 1; /* Each element takes equal space */
+    background-color: #f4f4f4;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.abo-element h2 {
+    margin-top: 0;
+    font-size: 1.5em;
+    color: black;
+    padding: 15px;
+}
+
+.abo-element p {
+    font-size: 1em;
+    color: #555;
+    font-weight: normal;
+}
+.white-wrapper{
+    background: #FFFFFF;
+    padding: 2%;
+
+}
+.equipes {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; /* Space between the elements */
+    margin: 20px 0;
+}
+
+.membre {
+    flex: 1;
+    background-color: #f4f4f4;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center items horizontally */
+    text-align: center; /* Center text within the p element */
+}
+
+.membre img {
+    max-width: 400px;
+    max-height: 250px;
+    height: auto;
+    margin-bottom: 10px; /* Space between the image and the text */
+}
+
+.membre p {
+    margin: 0;
+    font-size: 1em;
+    color: black;
+}
+.titleabo {
+
+    font-size: 1.5em;
+    color: black;
+}
+footer{
+    height: 10vh;
+    background-color: black;
+    text-align: center;
+    color: #FFFFFF;
+    padding-top: 3vh;
+
+}

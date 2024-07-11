@@ -1,0 +1,82 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello EspaceProController!{% endblock %}
+
+{% block body %}
+
+    <h1>Espace Professionel</h1>
+
+    <div class="white-wrapper">
+
+    <h2 class="titleabo">
+        RAPPEL DES DIFFÉRENTES FORMULES D’ABONNEMENT FOREST HILL :
+    </h2>
+
+    <div class="abonnements">
+
+            <div class="abo-elements">
+                <div class="abo-element">
+                    <h2>PACHA FORME</h2>
+                    <p>La carte annuelle PACHA FORME vous donne accès à tous les clubs Forest Hill pour y pratiquer les activités de sports de raquettes, de fitness et musculation ainsi que l’accès aux piscines et au parc aquatique de l’Aquaboulevard de Paris dans les conditions du règlement intérieur.
+                        Cet abonnement est réservé aux plus de 16 ans et est valable de date à date.
+                    </p>
+                </div>
+                <div class="abo-element">
+                    <h2>PACHA FRIENDS</h2>
+                    <p> Avec la formule FRIENDS, vous pouvez venir accompagné de la personne de votre choix à chacune de vos visites, dans la limite d’un invité par jour sur l’ensemble des clubs. La présence simultanée du Pacha Friends et de son invité est obligatoire.
+
+                        NOUVEAU :
+
+                        Depuis le 1er décembre, la formule Friends s’enrichit ! Vous pouvez, en plus de votre invité habituel, venir accompagné(e) d’un enfant (de 3 à 11 ans) pendant toute la durée de votre abonnement. Et c’est CADEAU !
+                    </p>
+                </div>
+                <div class="abo-element">
+                    <h2> PACHA LIB'</h2>
+                    <p>L’abonnement PACHA LIB’, vous permet si vous êtes titulaire d’une carte Pacha Forme ou Pacha Friends de bénéficier d’une souplesse supplémentaire dans votre contrat annuel.
+                        Après 6 mois d’abonnement continus, vous pourrez arrêter définitivement votre abonnement ou le reporter pour quel que motif que ce soit et sans justificatif à produire.
+                    </p>
+                </div>
+            </div>
+    </div>
+
+    </div>
+    <h2>
+        NOTRE ÉQUIPE COMMERCIALE EST À VOTRE ÉCOUTE
+    </h2>
+    <div class="equipes">
+
+        <div class="membre">
+            <img src="{{ asset('/images/facesecretary.jpg')  }}" alt="">
+
+            <p>
+                Fabienne Jourdan
+                Tél. : 01 53 78 15 63
+                Mobile : 06 73 53 76 08
+            </p>
+        </div>
+        <div class="membre">
+            <img src="{{ asset('/images/facehuman.jpg')  }}" alt="">
+
+            <p>
+                Sébastien Gassies
+                Tél. : 01 53 78 10 17
+                Mobile : 06 73 53 76 05
+            </p>
+        </div>
+        <div class="membre">
+            <img src="{{ asset('/images/beatrice.jpg')  }}" alt="">
+
+            <p>
+                Béatrice Da Cas
+                Tél. : 01 53 78 15 33
+            </p>
+
+        </div>
+    </div>
+<footer>
+<p>
+    © Copyright 2017 – 2020   |   Espace Pro par FOREST HILL   |   Tous droits réservés   |   Crédits Photo : FOREST HILL
+</p>
+
+</footer>
+{% endblock %}
